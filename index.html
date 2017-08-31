@@ -11,14 +11,19 @@
 
 <tw-story></tw-story>
 
-<tw-storydata name="CAI Games and Development" startnode="13" creator="Twine" creator-version="2.1.3" ifid="79FE9090-30ED-4C26-833E-1AFEA8096F75" format="Harlowe" format-version="2.0.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">img {
+<tw-storydata name="CAI Games and Development" startnode="11" creator="Twine" creator-version="2.1.3" ifid="79FE9090-30ED-4C26-833E-1AFEA8096F75" format="Harlowe" format-version="2.0.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.transition-in[data-t8n^=dissolve] {
+	-webkit-animation:appear 0ms step-start;
+	animation:appear 0ms step-start
+}
+
+img {
   max-width:100%;
   height:auto;
   max-height:100%;
   }
 
 body {
-background-color: white;
+	background-color: white;
 }
 
 tw-icon {
@@ -182,37 +187,24 @@ body { background-color: #eee; }
         .collage a:hover > img {
             filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
             -webkit-filter: grayscale(0%);
-        }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Training/Learning" tags="" position="400,425">Training/learning games educate their players through lessons communicated via gameplay. These lessons subtly build upon each other, and typically culminate in an assessment in some form.</tw-passagedata><tw-passagedata pid="2" name="Game Type" tags="" position="950,725">Purposeful games typically fall into three distinct categories: [[training/learning|Training/Learning]], [[social/behavioral change|Social/Behavioral Change]], [[empathy/awareness|Empathy/Awareness]], or [[assessment|Assessment]]. 
+        }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Training/Learning" tags="" position="400,425">Training/learning games educate their players through lessons communicated via gameplay. These lessons subtly build upon each other, and typically culminate in an assessment in some form.</tw-passagedata><tw-passagedata pid="2" name="Game Type" tags="" position="950,725">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\Purposeful games typically fall into three distinct categories: [[training/learning|Training/Learning]], [[social/behavioral change|Social/Behavioral Change]], [[empathy/awareness|Empathy/Awareness]], or [[assessment|Assessment]]. 
 
 //**What is the framework of your game?**//
 
 (link: &quot;Training/Learning&quot;)[(set: $gameType to &quot;Training/Learning&quot;)(goto: &quot;Results&quot;)]
 (link: &quot;Empathy/Awareness&quot;)[(set: $gameType to &quot;Empathy/Awareness&quot;)(goto: &quot;Results&quot;)]
 (link: &quot;Social/Behavioral Change&quot;)[(set: $gameType to &quot;Social/Behavioral Change&quot;)(goto: &quot;Results&quot;)]
-(link: &quot;Assessment&quot;)[(set: $gameType to &quot;Assessment&quot;)(goto: &quot;Results&quot;)]</tw-passagedata><tw-passagedata pid="3" name="Assessment" tags="" position="400,550">Assessment Games</tw-passagedata><tw-passagedata pid="4" name="Empathy/Awareness" tags="" position="400,825">Empathy/awareness games aim to expose their players to a specific real world topic or situation. Though they can evaluate the level to which their players understand the intracacies of the topic, they are not required to.</tw-passagedata><tw-passagedata pid="5" name="Systems" tags="" position="950,875">//**What platform would this game ideally be played on?**//
+(link: &quot;Assessment&quot;)[(set: $gameType to &quot;Assessment&quot;)(goto: &quot;Results&quot;)]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="3" name="Assessment" tags="" position="400,550">Assessment games evaluate the player&#x27;s skills and abilities through carefully measured interactive moments. They are different from Training/Learning games because their aim is not to teach, but simply to measure existing player capabilities.</tw-passagedata><tw-passagedata pid="4" name="Empathy/Awareness" tags="" position="400,825">Empathy/awareness games aim to expose their players to a specific real world topic or situation. Though they can evaluate the level to which their players understand the intracacies of the topic, they are not required to.</tw-passagedata><tw-passagedata pid="5" name="Start" tags="intro" position="950,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;Welcome to the [[QUEST|Quest]], Creative Associates&#x27; internal resource for exploring the [[potential of games|Potential of Games]] by practice area.&lt;/div&gt;
+&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .5s forwards;&quot;&gt;On your journey to discover if a game is suitable for your current project, QUEST aims to equip you with a map of the existing territory and a sense of direction.&lt;/div&gt; 
 
-[[PC|Size]]
-[[Mobile|Size]]
-[[Virtual Reality|Size]]
-[[Analog|Size]]</tw-passagedata><tw-passagedata pid="6" name="Size" tags="" position="950,1025">Are you aiming for mass commercial appeal, or for a preselected and specific audience?
+&lt;div style=&quot;opacity: 0; animation: fadeIn 2s 1.25s forwards;&quot;&gt;What would you like to do?
 
-[[Commercial Appeal|Results]]
-[[Specific Audience|Results]]</tw-passagedata><tw-passagedata pid="7" name="Start" tags="intro" position="950,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .75s forwards;&quot;&gt;Welcome to the [[QUEST|Quest]], Creative Associates&#x27; internal tool for assessing whether a specific problem space could be solved using the [[potential of games|Potential of Games]].&lt;/div&gt;
-&lt;div style=&quot;opacity: 0; animation: fadeIn 2s 1s forwards;&quot;&gt;Before exploring the creation of a new game, let&#x27;s first examine what currently exists. Often times, using existing technologies can be cheaper and provide solutions that have been vastly iterated upon.&lt;/div&gt;
-&lt;div style=&quot;opacity: 0; animation: fadeIn 2s 1.25s forwards;&quot;&gt;[[Dive in.|Division]]&lt;/div&gt;
-&lt;style&gt;
-tw-sidebar tw-icon.redo {
-	display: none;
-}
-tw-sidebar tw-icon.undo {
-	display: none;
-}
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="8" name="Potential of Games" tags="" position="750,300">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .75s forwards;&quot;&gt;For many years, developers have been exploring purposeful applications of games. Studios like Niantic and Nintendo have been using new technologies like GPS’s and gyroscopes/accelerometers to get people exercising, turning player attention toward the goal of a game instead of the act of an exercise.&lt;/div&gt;
-&lt;div style=&quot;opacity: 0; animation: fadeIn 2s 1s forwards;&quot;&gt;Educational games have been around for even longer, yet more recent games like Minecraft: Education Edition have been exploring the role of tangential learning to build collaboration and team-building skills. Even education company McGraw-Hill is exploring the uses of smaller gaming “gamelets” that focus on the “teachable moment” as a supplement to traditional classroom learning.&lt;/div&gt;
-&lt;div style=&quot;opacity: 0; animation: fadeIn 2s 1.25s forwards;&quot;&gt;Digital training and assessments are beginning to be gamified as well, with progress meters, trophies, and level up systems slowly becoming the norm on sites like Khan Academy to motivate people toward finishing “one more module”.&lt;/div&gt;
-&lt;div style=&quot;opacity: 0; animation: fadeIn 2s 1.5s forwards;&quot;&gt;In the political sphere, organizations like the World Bank and the Brookings Institute have invested in games like Budget Hero and The Fiscal Ship to illustrate the difficulties of balancing the federal budget. The data metrics taken from the 1.3 million players of Budget Hero have provided insight on the opinions of the American public, adding depth, diversity, and context to important issues, sparking a meaningful public dialogue, and informing policy.&lt;/div&gt;
-&lt;div style=&quot;opacity: 0; animation: fadeIn 2s 1.75s forwards;&quot;&gt;In many ways, the [[international development|International Development]] sphere has just begun to tap into the gaming space.&lt;/div&gt;
-&lt;div style=&quot;opacity: 0; animation: fadeIn 2s 2s forwards;&quot;&gt;[[Return to Home|Start]]&lt;/div&gt;
+[[Learn about currently existing games by practice area|Division]]
+[[Explore the creaton of an entirely new game|SGDA Intro]]
+&lt;/div&gt;
+
 
 &lt;style&gt;
 tw-sidebar tw-icon.redo {
@@ -221,7 +213,22 @@ tw-sidebar tw-icon.redo {
 tw-sidebar tw-icon.undo {
 	display: none;
 }
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="9" name="Gone Home" tags="" position="1350,25">&lt;div style=&quot;top: -150px;&quot;&gt;
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="6" name="Potential of Games" tags="" position="750,300">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;For many years, developers have been exploring purposeful applications of games. Studios like Niantic and Nintendo have been using new technologies like GPS’s and gyroscopes/accelerometers to get people exercising, turning player attention toward the goal of a game instead of the act of an exercise.&lt;/div&gt;
+&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .5s forwards;&quot;&gt;Educational games have been around for even longer, yet more recent games like Minecraft: Education Edition have been exploring the role of tangential learning to build collaboration and team-building skills. Even education company McGraw-Hill is exploring the uses of smaller gaming “gamelets” that focus on the “teachable moment” as a supplement to traditional classroom learning.&lt;/div&gt;
+&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .75s forwards;&quot;&gt;Digital training and assessments are beginning to be gamified as well, with progress meters, trophies, and level up systems slowly becoming the norm on sites like Khan Academy to motivate people toward finishing “one more module”.&lt;/div&gt;
+&lt;div style=&quot;opacity: 0; animation: fadeIn 2s 1s forwards;&quot;&gt;In the political sphere, organizations like the World Bank and the Brookings Institute have invested in games like Budget Hero and The Fiscal Ship to illustrate the difficulties of balancing the federal budget. The data metrics taken from the 1.3 million players of Budget Hero have provided insight on the opinions of the American public, adding depth, diversity, and context to important issues, sparking a meaningful public dialogue, and informing policy.&lt;/div&gt;
+&lt;div style=&quot;opacity: 0; animation: fadeIn 2s 1.25s forwards;&quot;&gt;In many ways, the [[international development|International Development]] sphere has just begun to tap into the gaming space.&lt;/div&gt;
+&lt;div style=&quot;opacity: 0; animation: fadeIn 2s 1.5s forwards;&quot;&gt;[[Return to Home|Start]]&lt;/div&gt;
+
+&lt;style&gt;
+tw-sidebar tw-icon.redo {
+	display: none;
+}
+tw-sidebar tw-icon.undo {
+	display: none;
+}
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="7" name="Gone Home" tags="" position="1350,25">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+&lt;div style=&quot;top: -150px;&quot;&gt;
   &lt;div style=&quot;
 	  float: left;
 	  display: block;
@@ -252,7 +259,8 @@ tw-sidebar tw-icon.undo {
 
   &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="10" name="Papers, Please" tags="" position="1475,25">&lt;div style=&quot;top: -150px;&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="8" name="Papers, Please" tags="" position="1475,25">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+&lt;div style=&quot;top: -150px;&quot;&gt;
   &lt;div style=&quot;
 	  float: left;
 	  display: block;
@@ -286,14 +294,14 @@ tw-sidebar tw-icon.undo {
 
 &lt;/div&gt;
 
-</tw-passagedata><tw-passagedata pid="11" name="Header" tags="header" position="100,175">(enchant: ?page, (text-colour: black) + (background: white))
+</tw-passagedata><tw-passagedata pid="9" name="Header" tags="header" position="100,175">(enchant: ?page, (text-colour: black) + (background: white))
 
 {
 (print: &quot;&lt;script&gt;$(&#x27;html&#x27;).removeClass(\)&lt;/script&gt;&quot;)
 (if: (passage:)&#x27;s tags&#x27;s length &gt; 0)[
 (print: &quot;&lt;script&gt;$(&#x27;html&#x27;).addClass(&#x27;&quot; + (passage:)&#x27;s tags.join(&#x27; &#x27;) + &quot;&#x27;\)&lt;/script&gt;&quot;)
 ]
-}</tw-passagedata><tw-passagedata pid="12" name="Social/Behavioral Change" tags="" position="400,700">Behavioral change games aim to break physical or mental habitual behaviors.</tw-passagedata><tw-passagedata pid="13" name="Title" tags="" position="950,0">(set: $division to &quot;&quot;)
+}</tw-passagedata><tw-passagedata pid="10" name="Social/Behavioral Change" tags="" position="400,700">*Placeholder* Behavioral change games aim to break physical or mental habits.</tw-passagedata><tw-passagedata pid="11" name="Title" tags="" position="950,0">(set: $division to &quot;&quot;)
 (set: $gameType to &quot;&quot;)
 
 &lt;div style=&quot;
@@ -321,26 +329,36 @@ tw-sidebar tw-icon.undo {
 	&lt;/div&gt;
 &lt;/div&gt;
 
-</tw-passagedata><tw-passagedata pid="14" name="Division" tags="" position="950,425">//**What division is this project housed within?**//
+</tw-passagedata><tw-passagedata pid="12" name="Division" tags="" position="950,425">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\//**What division is this project housed within?**//
 
 [[Communities in Transition|Communities in Transition]]
 [[Economic Growth|Economic Growth]]
-[[Education|Education]]</tw-passagedata><tw-passagedata pid="15" name="Economic Growth" tags="" position="1150,575">//**Which specific practice area within Economic Growth does this project fall into?**//
+[[Education|Education]]
+
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="13" name="Economic Growth" tags="" position="1150,575">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\//**Which specific practice area within Economic Growth does this project fall into?**//
 
 (link: &quot;Youth and Workforce Development&quot;)[(set: $division to &quot;Youth and Workforce Development&quot;)(goto: &quot;Game Type&quot;)]
-(link: &quot;Livelihoods and Economic Recovery&quot;)[(set: $division to &quot;Livelihoods and Economic Recovery&quot;)(goto: &quot;Game Type&quot;)]</tw-passagedata><tw-passagedata pid="16" name="Communities in Transition" tags="" position="950,575">//**Which specific practice area within Communities in Transition does this project fall into?**//
+(link: &quot;Livelihoods and Economic Recovery&quot;)[(set: $division to &quot;Livelihoods and Economic Recovery&quot;)(goto: &quot;Game Type&quot;)]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="14" name="Communities in Transition" tags="" position="950,575">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\//**Which specific practice area within Communities in Transition does this project fall into?**//
 
 (link: &quot;Citizen Security&quot;)[(set: $division to &quot;Citizen Security&quot;)(goto: &quot;Game Type&quot;)]
 (link: &quot;Governance and Community Resilience&quot;)[(set: $division to &quot;Governance and Community Resilience&quot;)(goto: &quot;Game Type&quot;)]
 (link: &quot;Countering Violent Extremism&quot;)[(set: $division to &quot;Countering Violent Extremism&quot;)(goto: &quot;Game Type&quot;)]
 (link: &quot;Political Transitions&quot;)[(set: $division to &quot;Political Transitions&quot;)(goto: &quot;Game Type&quot;)]
 (link: &quot;Electoral Education and Integrity&quot;)[(set: $division to &quot;Electoral Education and Integrity&quot;)(goto: &quot;Game Type&quot;)]
-(link: &quot;Stabilization and Development&quot;)[(set: $division to &quot;Stabilization and Development&quot;)(goto: &quot;Game Type&quot;)]</tw-passagedata><tw-passagedata pid="17" name="Education" tags="" position="775,575">//**Which specific practice area within Education does this project fall into?**//
+(link: &quot;Stabilization and Development&quot;)[(set: $division to &quot;Stabilization and Development&quot;)(goto: &quot;Game Type&quot;)]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="15" name="Education" tags="" position="775,575">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\//**Which specific practice area within Education does this project fall into?**//
 
 (link: &quot;Education in Conflict&quot;)[(set: $division to &quot;Education in Conflict&quot;)(goto: &quot;Game Type&quot;)]
-(link: &quot;Instructional Systems and Governance&quot;)[(set: $division to &quot;Instructional Systems and Governance&quot;)(goto: &quot;Game Type&quot;)]</tw-passagedata><tw-passagedata pid="18" name="Quest" tags="" position="750,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .75s forwards;&quot;&gt;Quest stands for &quot;Questionaire for Evaluating Simulative Technologies&quot;.&lt;/div&gt;
-&lt;div style=&quot;opacity: 0; animation: fadeIn 2s 1s forwards;&quot;&gt;All games are simulations, whose laws are revealed through interactivity. Through this process of play, we actively learn--tapping into the medium&#x27;s vast potential for positive change.&lt;/div&gt;
-&lt;div style=&quot;opacity: 0; animation: fadeIn 2s 1.25s forwards;&quot;&gt;To maximally harness this potential, Quest was developed to be a guide. Through a series of pointed questions, Quest aims to provide you with both a roadmap of the purposeful gaming space and a compass for direction on your journey to evaluating whether a game could work for your specific situation.&lt;/div&gt;</tw-passagedata><tw-passagedata pid="19" name="Win The White House" tags="" position="1600,25">&lt;div style=&quot;top: -150px;&quot;&gt;
+(link: &quot;Instructional Systems and Governance&quot;)[(set: $division to &quot;Instructional Systems and Governance&quot;)(goto: &quot;Game Type&quot;)]
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="16" name="Quest" tags="" position="750,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;Quest stands for &quot;Questionaire for Evaluating Simulative Technologies&quot;.&lt;/div&gt;
+&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .5s forwards;&quot;&gt;All games are simulations, whose laws are revealed through interactivity. Through this process of play, we actively learn - tapping into the medium&#x27;s vast potential for positive change.&lt;/div&gt;
+&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .75s forwards;&quot;&gt;To maximally harness this potential, Quest was developed to be a guide. Through a series of pointed questions, Quest aims to provide you with both a roadmap of the purposeful gaming space and a compass for direction on your journey to evaluating whether a game could work for your specific situation.&lt;/div&gt;</tw-passagedata><tw-passagedata pid="17" name="Win The White House" tags="" position="1600,25">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+&lt;div style=&quot;top: -150px;&quot;&gt;
   &lt;div style=&quot;
 	  float: left;
 	  display: block;
@@ -373,7 +391,8 @@ tw-sidebar tw-icon.undo {
   &lt;/div&gt;
 
 &lt;/div&gt;
-</tw-passagedata><tw-passagedata pid="20" name="DragonBox Numbers" tags="" position="2100,25">&lt;div style=&quot;top: -150px;&quot;&gt;
+</tw-passagedata><tw-passagedata pid="18" name="DragonBox Numbers" tags="" position="2100,25">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+&lt;div style=&quot;top: -150px;&quot;&gt;
   &lt;div style=&quot;
 	  float: left;
 	  display: block;
@@ -405,7 +424,8 @@ tw-sidebar tw-icon.undo {
 
   &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="21" name="Lego Mindstorms" tags="" position="2725,25">&lt;div style=&quot;top: -150px;&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="19" name="Lego Mindstorms" tags="" position="2725,25">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+&lt;div style=&quot;top: -150px;&quot;&gt;
   &lt;div style=&quot;
 	  float: left;
 	  display: block;
@@ -437,7 +457,8 @@ tw-sidebar tw-icon.undo {
 
   &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="22" name="Katkooti" tags="" position="1975,25">&lt;div style=&quot;top: -150px;&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="20" name="Katkooti" tags="" position="1975,25">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+&lt;div style=&quot;top: -150px;&quot;&gt;
   &lt;div style=&quot;
 	  float: left;
 	  display: block;
@@ -471,7 +492,8 @@ tw-sidebar tw-icon.undo {
 
   &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="23" name="PeaceMaker" tags="" position="2600,25">&lt;div style=&quot;top: -150px;&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="21" name="PeaceMaker" tags="" position="2600,25">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+&lt;div style=&quot;top: -150px;&quot;&gt;
   &lt;div style=&quot;
 	  float: left;
 	  display: block;
@@ -503,7 +525,8 @@ tw-sidebar tw-icon.undo {
 
   &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="24" name="SuperChem VR" tags="" position="2475,25">&lt;div style=&quot;top: -150px;&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="22" name="SuperChem VR" tags="" position="2475,25">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+&lt;div style=&quot;top: -150px;&quot;&gt;
   &lt;div style=&quot;
 	  float: left;
 	  display: block;
@@ -535,7 +558,8 @@ tw-sidebar tw-icon.undo {
 
   &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="25" name="Happy Atoms" tags="" position="2350,25">&lt;div style=&quot;top: -150px;&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="23" name="Happy Atoms" tags="" position="2350,25">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+&lt;div style=&quot;top: -150px;&quot;&gt;
   &lt;div style=&quot;
 	  float: left;
 	  display: block;
@@ -567,7 +591,8 @@ tw-sidebar tw-icon.undo {
 
   &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="26" name="The Fiscal Ship" tags="" position="1850,25">&lt;div style=&quot;top: -150px;&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="24" name="The Fiscal Ship" tags="" position="1850,25">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+&lt;div style=&quot;top: -150px;&quot;&gt;
   &lt;div style=&quot;
 	  float: left;
 	  display: block;
@@ -599,7 +624,8 @@ tw-sidebar tw-icon.undo {
 
   &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="27" name="Minecraft Education Edition" tags="" position="1725,25">&lt;div style=&quot;top: -150px;&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="25" name="Minecraft Education Edition" tags="" position="1725,25">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+&lt;div style=&quot;top: -150px;&quot;&gt;
   &lt;div style=&quot;
 	  float: left;
 	  display: block;
@@ -631,7 +657,8 @@ tw-sidebar tw-icon.undo {
 
   &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="28" name="Prevenciopoly" tags="" position="2225,25">&lt;div style=&quot;top: -150px;&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="26" name="Prevenciopoly" tags="" position="2225,25">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+&lt;div style=&quot;top: -150px;&quot;&gt;
   	&lt;div style=&quot;text-align:center;&quot;&gt;**Prevenciopoly**&lt;/div&gt;
 
 	&lt;div style=&quot;text-align:center;&quot;&gt;[[Summary|Prevenciopoly Summary]]&lt;/div&gt;
@@ -646,7 +673,8 @@ tw-sidebar tw-icon.undo {
 	  &lt;/a&gt;
   &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="29" name="Arguement Wars" tags="" position="2850,25">&lt;div style=&quot;top: -150px;&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="27" name="Arguement Wars" tags="" position="2850,25">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+&lt;div style=&quot;top: -150px;&quot;&gt;
   &lt;div style=&quot;
 	  float: left;
 	  display: block;
@@ -678,7 +706,8 @@ tw-sidebar tw-icon.undo {
 
   &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="30" name="LawCraft" tags="" position="2975,25">&lt;div style=&quot;top: -150px;&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="28" name="LawCraft" tags="" position="2975,25">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+&lt;div style=&quot;top: -150px;&quot;&gt;
   &lt;div style=&quot;
 	  float: left;
 	  display: block;
@@ -710,7 +739,8 @@ tw-sidebar tw-icon.undo {
 
   &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="31" name="Creative Frontiers" tags="" position="1525,1525">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="32" name="Filament Games" tags="" position="1525,1650">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="33" name="American University GameLab" tags="" position="1525,1775">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="34" name="Results" tags="" position="950,1150">**Relevant (text-style: &quot;outline&quot;)[//$gameType//] games within (text-style: &quot;outline&quot;)[//$division//]:**
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="29" name="Creative Frontiers" tags="" position="1500,1175">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="30" name="Filament Games" tags="" position="1500,1300">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="31" name="American University GameLab" tags="" position="1500,1425">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="32" name="Results" tags="" position="950,875">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\**Relevant (text-style: &quot;outline&quot;)[//$gameType//] games within (text-style: &quot;outline&quot;)[//$division//]:**
 
 \&lt;!--Blindfold--&gt;
 &lt;div&gt;(if: $division is &quot;Countering Violent Extremism&quot; and $gameType is &quot;Empathy/Awareness&quot;)[[[BLINDFOLD|BLINDFOLD]]: BLINDFOLD is set during the events of the Iranian Revolution in which the player embodies a photojournalist being held in Evin Prison and is charged with making propaganda against the state.&lt;/br&gt;&lt;/br&gt;]&lt;/div&gt;  
@@ -816,6 +846,8 @@ tw-sidebar tw-icon.undo {
 
 \Explore the [[**creation of an entirely new game**|SGDA Intro]]
 
+&lt;/div&gt;
+
 &lt;style&gt;
 div {
     padding-left: 3em;
@@ -826,12 +858,12 @@ span {
     padding-left: 3em;
     text-indent:-3em;
 }
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="35" name="Competitors" tags="" position="450,300">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .75s forwards;&quot;&gt;Within the field of international development, interest in games is only just beginning.&lt;/div&gt;
-&lt;div style=&quot;opacity: 0; animation: fadeIn 2s 1s forwards;&quot;&gt;Under their USAID contracted Kenya Transition Initiative, Chemonics International issued a RFP in 2013 for a subcontractor to develop a game for their Countering Violent Extremism (CVE) activities in Kenya.&lt;/div&gt;
-&lt;div style=&quot;opacity: 0; animation: fadeIn 2s 1.25s forwards;&quot;&gt;In 2015, FHI 360 entered their climate resilience video game concept to the Global Resilience Challenge--an initiative that is part of a $150 million effort to help nations and communities drive evidence-based investments in adapting to climate change. Their game advanced to the second round of the competition, being one of 17 competitors selected from a pool of nearly 500.&lt;/div&gt;
-&lt;div style=&quot;opacity: 0; animation: fadeIn 2s 1.5s forwards;&quot;&gt;Finally, DAI has shown considerable interest in using games to reach and engage the youth, due to the increasing adoption rates of cell phones.&lt;/div&gt;
-&lt;div style=&quot;opacity: 0; animation: fadeIn 2s 1.75s forwards;&quot;&gt;Our competitors have only dipped their toes in the waters of purposeful games, leaving Creative space to capitalize on what other purposeful game companies outside of international development are realizing about the medium: that it can be a vehicle for change.&lt;/div&gt;
-&lt;div style=&quot;opacity: 0; animation: fadeIn 2s 2s forwards;&quot;&gt;[[Return to Home|Start]]&lt;/div&gt;
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="33" name="Competitors" tags="" position="450,300">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;Within the field of international development, interest in games is only just beginning.&lt;/div&gt;
+&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .5s forwards;&quot;&gt;Under their USAID contracted Kenya Transition Initiative, Chemonics International issued a RFP in 2013 for a subcontractor to develop a game for their Countering Violent Extremism (CVE) activities in Kenya.&lt;/div&gt;
+&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .75s forwards;&quot;&gt;In 2015, FHI 360 entered their climate resilience video game concept to the Global Resilience Challenge--an initiative that is part of a $150 million effort to help nations and communities drive evidence-based investments in adapting to climate change. Their game advanced to the second round of the competition, being one of 17 competitors selected from a pool of nearly 500.&lt;/div&gt;
+&lt;div style=&quot;opacity: 0; animation: fadeIn 2s 1s forwards;&quot;&gt;Finally, DAI has shown considerable interest in using games to reach and engage the youth, due to the increasing adoption rates of cell phones.&lt;/div&gt;
+&lt;div style=&quot;opacity: 0; animation: fadeIn 2s 1.25s forwards;&quot;&gt;Our competitors have only dipped their toes in the waters of purposeful games, leaving Creative space to capitalize on what other purposeful game companies outside of international development are realizing about the medium: that it can be a vehicle for change.&lt;/div&gt;
+&lt;div style=&quot;opacity: 0; animation: fadeIn 2s 1.5s forwards;&quot;&gt;[[Return to Home|Start]]&lt;/div&gt;
 
 &lt;style&gt;
 tw-sidebar tw-icon.redo {
@@ -840,7 +872,8 @@ tw-sidebar tw-icon.redo {
 tw-sidebar tw-icon.undo {
 	display: none;
 }
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="36" name="BLINDFOLD" tags="" position="1225,25">&lt;div style=&quot;top: -150px;&quot;&gt;
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="34" name="BLINDFOLD" tags="" position="1225,25">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+&lt;div style=&quot;top: -150px;&quot;&gt;
   &lt;div style=&quot;
 	  float: left;
 	  display: block;
@@ -871,34 +904,41 @@ tw-sidebar tw-icon.undo {
 
 
   &lt;/div&gt;
-
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="37" name="BLINDFOLD Summary" tags="" position="1225,150">//Confronting the timely crisis of free press and state sponsored violations against journalists, Blindfold uses virtual reality to offer viewers a rare opportunity to sit in an interrogation room and experience the atrocities of state sponsored forced confessions. Inspired by true stories of imprisoned journalists around the world and made with the support from the Center for Human Rights in Iran and the Committee to Protect Journalists (CPJ). iNK Stories latest work triggers the hot button discussion on state sponsored anti-media/journalist hostility, exposing the parameters of a free press and the collateral human rights violations associated with it.//</tw-passagedata><tw-passagedata pid="38" name="Gone Home Summary" tags="" position="1350,150">//After a year-long trip to Europe, Kaitlin Greenbriar returns to an empty home. “Don’t go digging around trying to find out where I am,” reads a note on the front door, signed by her younger sister Sam and punctuated by lightning from the storm outside. The player, as Kaitlin, must then explore the house, figuring out why her family has disappeared. They have left behind a trove of objects and artifacts — in darkened rooms and behind locked doors — for the player to explore, and it is through this environment that the story reveals itself.
+</tw-passagedata><tw-passagedata pid="35" name="BLINDFOLD Summary" tags="" position="1225,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\//Confronting the timely crisis of free press and state sponsored violations against journalists, Blindfold uses virtual reality to offer viewers a rare opportunity to sit in an interrogation room and experience the atrocities of state sponsored forced confessions. Inspired by true stories of imprisoned journalists around the world and made with the support from the Center for Human Rights in Iran and the Committee to Protect Journalists (CPJ). iNK Stories latest work triggers the hot button discussion on state sponsored anti-media/journalist hostility, exposing the parameters of a free press and the collateral human rights violations associated with it.//</tw-passagedata><tw-passagedata pid="36" name="Gone Home Summary" tags="" position="1350,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\//After a year-long trip to Europe, Kaitlin Greenbriar returns to an empty home. “Don’t go digging around trying to find out where I am,” reads a note on the front door, signed by her younger sister Sam and punctuated by lightning from the storm outside. The player, as Kaitlin, must then explore the house, figuring out why her family has disappeared. They have left behind a trove of objects and artifacts — in darkened rooms and behind locked doors — for the player to explore, and it is through this environment that the story reveals itself.
 
 As a game, Gone Home is simply elegant. It eschews many of the complex systems and elements that we have come to expect from games. Players are limited to movement and object interaction — navigating a space and turning on lights, picking up photographs, or reading documents that populate the house. The fullness of the environment emphasizes the emptiness of the house — you can feel the negative space where the people who own these objects should be. The meticulous attention to detail encourages a slow, foreboding pace for the game. Everything in Gone Home works to perfectly capture that experience of walking through an empty house, knowing that something is out of place.
 
 Emerging from the jigsaw of notes, photographs, and cassette tapes is a story of coming of age for Kaitlin’s sister, Sam. Her crisis resonates through the house with a certain level of familiarity. In large part, this comes directly from Gone Home’s game design. The tone and pace of gameplay transform the Greenbriars’ “normal,” suburban house into an intimidating encounter. Sam’s story is woven into this exploration through objects and narration, allowing the player to normalize and internalize Sam’s conflict as he/she conquers the fear of moving alone through the house. Sam’s story, intimidating not only as a crisis for her to overcome, but also as something for Kaitlin to come to terms with and for a game to carry as its storyline, becomes normal through this process. By blending Sam’s story into the experience of the game, it can be carried along by the nostalgias we possess as players.
 
-Gone Home was honored with the Game of the Year Award at the 2014 G4C Festival.//</tw-passagedata><tw-passagedata pid="39" name="Papers, Please Summary" tags="" position="1475,150">//Papers, Please is a single-player “Dystopian Document Thriller” in which the player steps into the role of an immigration inspector in the fictional country of Arstotzka in the year 1982. As the player stands on the threshold between two different countries, a unique perspective of immigration and border security springs out of the mundane task of inspecting papers. On a second layer, the player must simultaneously provide for his/her family using the salary earned from the job, which pays based on how many people have been processed through in a day. Balancing border security with the needs of the family is uniquely human, creating a juxtaposition that is new and interesting.
+Gone Home was honored with the Game of the Year Award at the 2014 G4C Festival.//</tw-passagedata><tw-passagedata pid="37" name="Papers, Please Summary" tags="" position="1475,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\//Papers, Please is a single-player “Dystopian Document Thriller” in which the player steps into the role of an immigration inspector in the fictional country of Arstotzka in the year 1982. As the player stands on the threshold between two different countries, a unique perspective of immigration and border security springs out of the mundane task of inspecting papers. On a second layer, the player must simultaneously provide for his/her family using the salary earned from the job, which pays based on how many people have been processed through in a day. Balancing border security with the needs of the family is uniquely human, creating a juxtaposition that is new and interesting.
 
 Using only a mouse, players examine sets of papers presented by immigrants in search of discrepancies between the documents and the immigration rules set out by the Arstotzkan government. Depending on their country of origin and reasons for entering, immigrants may require different sets of papers, including entry tickets, government IDs, passports, and entry visas, each with its own set of seals and sets of information to identify. Once the player has finished examining a person’s papers, he/she drags the papers over to one of two large stamps – admit or deny – and stamps the verdict of the examination onto the person’s passport before handing it back across the counter.
 
-Papers, Please asserts the potential of games to uncover new experiences and types of play. It was part of the Games for Change 2013 Festival Babycastles Hall of Fame.//</tw-passagedata><tw-passagedata pid="40" name="Win The White House Summary" tags="" position="1600,150">//Win the White House teaches students in grades 4-12 about the challenges of running for office by empowering them to create and manage their own presidential campaigns. Players must strategically raise money, poll voters, launch media campaigns, and make personal appearances, all while keeping a close eye on the map as they travel from state to state battling for popular support and electoral votes from the primaries through the general election.
+Papers, Please asserts the potential of games to uncover new experiences and types of play. It was part of the Games for Change 2013 Festival Babycastles Hall of Fame.//</tw-passagedata><tw-passagedata pid="38" name="Win The White House Summary" tags="" position="1600,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\//Win the White House teaches students in grades 4-12 about the challenges of running for office by empowering them to create and manage their own presidential campaigns. Players must strategically raise money, poll voters, launch media campaigns, and make personal appearances, all while keeping a close eye on the map as they travel from state to state battling for popular support and electoral votes from the primaries through the general election.
 
 First launched in advance of the 2012 election, the game was recently revamped and launched ahead of the 2016 presidential election. The 2016 game has been updated with new content and will give students a more personal and immersive experience, providing more control and ownership over their candidates and platforms and more challenges to promote deeper learning of current political issues. In the newer version, players can customize their candidate’s appearance, home state, party, slogan, and platform issues.  Players must present policy solutions and defend positions on their selections. In addition to correctly explaining an issue, players are challenged with making policy proposals that align with the party’s approach to the issue at play.
 
-Win the White House has been played more than 3.5 million times by nearly 2.8 million individual users. It is part of the iCivics suite of games which are designed to provide teachers and students with immersive and effective tools for learning about civic issues.//</tw-passagedata><tw-passagedata pid="41" name="Minecraft Education Edition Summary" tags="" position="1725,150">//Minecraft: Education Edition is an open-world game that promotes creativity, collaboration, and problem-solving in an immersive environment where the only limit is your imagination.  Building upon the wildly popular open world game, Minecraft, the Education Edition is specifically designed for learning in traditional classroom environments.
+Win the White House has been played more than 3.5 million times by nearly 2.8 million individual users. It is part of the iCivics suite of games which are designed to provide teachers and students with immersive and effective tools for learning about civic issues.//</tw-passagedata><tw-passagedata pid="39" name="Minecraft Education Edition Summary" tags="" position="1725,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\//Minecraft: Education Edition is an open-world game that promotes creativity, collaboration, and problem-solving in an immersive environment where the only limit is your imagination.  Building upon the wildly popular open world game, Minecraft, the Education Edition is specifically designed for learning in traditional classroom environments.
 
-Through extensions such as Classroom Mode and Code Builder, Minecraft supports game-based learning and computational thinking. Additional features, like an in-game camera and student privacy features, make the Education Edition more accessible and effective in a classroom. The game has the potential to transform teaching and learning, putting students at the center and enabling educators as designers and facilitators of the learning process.//</tw-passagedata><tw-passagedata pid="42" name="The Fiscal Ship Summary" tags="" position="1850,150">//The Fiscal Ship challenges you to put the federal budget on a sustainable course. Measured as a share of gross domestic product, the federal debt is higher than at any time since the end of World War II and projected to climb to unprecedented levels. America is looking at a permanent, growing mismatch between revenues and spending, and policymakers are faced with difficult decisions about how to reconcile important government priorities—including retirement and health benefits promised to the growing number of old folks—with the tax revenues that the current tax code will yield. Today’s tax code won’t yield enough revenue to pay for basic services of government plus the retirement and health benefits promised to the growing number of old folks. So your mission is to pick from a menu of tax and spending options to reduce the debt from projected levels over the next 25 years. Small changes to spending and taxes won’t suffice. The choices are difficult, but the goal is achievable.
+Through extensions such as Classroom Mode and Code Builder, Minecraft supports game-based learning and computational thinking. Additional features, like an in-game camera and student privacy features, make the Education Edition more accessible and effective in a classroom. The game has the potential to transform teaching and learning, putting students at the center and enabling educators as designers and facilitators of the learning process.//</tw-passagedata><tw-passagedata pid="40" name="The Fiscal Ship Summary" tags="" position="1850,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\//The Fiscal Ship challenges you to put the federal budget on a sustainable course. Measured as a share of gross domestic product, the federal debt is higher than at any time since the end of World War II and projected to climb to unprecedented levels. America is looking at a permanent, growing mismatch between revenues and spending, and policymakers are faced with difficult decisions about how to reconcile important government priorities—including retirement and health benefits promised to the growing number of old folks—with the tax revenues that the current tax code will yield. Today’s tax code won’t yield enough revenue to pay for basic services of government plus the retirement and health benefits promised to the growing number of old folks. So your mission is to pick from a menu of tax and spending options to reduce the debt from projected levels over the next 25 years. Small changes to spending and taxes won’t suffice. The choices are difficult, but the goal is achievable.
 
 But budget decisions aren’t only about fiscal sustainability. They also shape the kind of country we live in. To win the game, you need to find a combination of policies that match your values and priorities AND set the budget on a sustainable course.
 
 The Fiscal Ship is produced by the Hutchins Center at Brookings and the Serious Games Initiative at the Woodrow Wilson Center. We solicited advice from an advisory committee that represents a broad spectrum of political views. We are grateful to our funders, the Peter G. Peterson Foundation, the William and Flora Hewlett Foundation, and the Lounsbery Foundation. Brookings and the Wilson Center are solely responsible for the game; neither the advisory group nor the funders had approval or veto power over its content.
 
-Check out Budget Hero, the game that preceded The Fiscal Ship and has a wealth of data and research surrounding it.//</tw-passagedata><tw-passagedata pid="43" name="Katkooti Summary" tags="" position="1975,150">Creative Associates International partnered with Creative Frontiers to develop a learning game for Syrian children who have been displaced due to ongoing conflict in Syria. The game which was sponsored by NORAD and USAID through the  EduApp4Syria competition aimed to enhance both Arabic literacy and social well being of the children who played the game.
+Check out Budget Hero, the game that preceded The Fiscal Ship and has a wealth of data and research surrounding it.//</tw-passagedata><tw-passagedata pid="41" name="Katkooti Summary" tags="" position="1975,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\Creative Associates International partnered with Creative Frontiers to develop a learning game for Syrian children who have been displaced due to ongoing conflict in Syria. The game which was sponsored by NORAD and USAID through the  EduApp4Syria competition aimed to enhance both Arabic literacy and social well being of the children who played the game.
 
 We developed an innovative concept for the game centered around “Katkooti” a cute, magical bird that helps other animals re-learn language which they lost due to a magical disaster. The story line accounts for the loss and pain that these children have suffered and returns a measure of control as they guide Katkooti’s actions while interacting and helping animals of  “Mamlakat Alhaywanat” through engaging learning mini-games. The game-play is guided by a triple design goal of good pedagogy, engagement and promotion of well being.
 
-The game was well received by both NORAD and by Syrian refugees who tested it. Players especially appreciated the excellent artwork and the ability of the game to engage children. Parents were happy that children were “collecting knowledge instead of coins” a common trope of similar games. In all the game was well received and was one the top 5 finalists of the EduApp4Syria competition (The only concept to make it to the top 5 from the United states).</tw-passagedata><tw-passagedata pid="44" name="DragonBox Numbers Summary" tags="" position="2100,150">Give your child the foundation they need for future math learning with DragonBox Numbers.
+The game was well received by both NORAD and by Syrian refugees who tested it. Players especially appreciated the excellent artwork and the ability of the game to engage children. Parents were happy that children were “collecting knowledge instead of coins” a common trope of similar games. In all the game was well received and was one the top 5 finalists of the EduApp4Syria competition (The only concept to make it to the top 5 from the United states).</tw-passagedata><tw-passagedata pid="42" name="DragonBox Numbers Summary" tags="" position="2100,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\Give your child the foundation they need for future math learning with DragonBox Numbers.
 
 DragonBox Numbers will teach your child what numbers are, how they work, and what you can do with them. The game makes it easy and fun for your child to gain an intuitive understanding of numbers. It&#x27;s a great introduction to the wonderful world of math.
 
@@ -914,7 +954,8 @@ In the &quot;Ladder&quot; section, your child will have to think strategically t
 
 In the &quot;Run&quot; section, your child will have to direct the Noom down a path using quick mental calculations. Your child can use their fingers, Nooms or numerals to jump over obstacles. This activity reinforces your child&#x27;s number sense and trains their ability to quickly recognise and add numbers.
 
-DragonBox Numbers is based on the same pedagogical principles as the other games in the award-winning DragonBox series, and works by integrating the learning seamlessly into the gameplay, no quizzes or mindless repetitions. Every interaction in DragonBox Numbers is designed to heighten your child’s understanding of numbers and strengthen his or her love of math, giving your child a great foundation for future math learning.</tw-passagedata><tw-passagedata pid="45" name="Prevenciopoly Summary" tags="" position="2225,150">PREVENCIOPOLY is a strategy to educate youth in the OCs, CMPVs, and other municipal actorson the risk factors associated with violence and the tools available to reduce violence in a dynamic group activity. Prevencionopoly is a game that has a final goal of converting players into actors for prevention. This game is available in every OC in the 25 intervention communities. The goal of thegame is to relay prevention of violence to children and adults in a way that is fun to play and easy to understand. 
+DragonBox Numbers is based on the same pedagogical principles as the other games in the award-winning DragonBox series, and works by integrating the learning seamlessly into the gameplay, no quizzes or mindless repetitions. Every interaction in DragonBox Numbers is designed to heighten your child’s understanding of numbers and strengthen his or her love of math, giving your child a great foundation for future math learning.</tw-passagedata><tw-passagedata pid="43" name="Prevenciopoly Summary" tags="" position="2225,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\PREVENCIOPOLY is a strategy to educate youth in the OCs, CMPVs, and other municipal actorson the risk factors associated with violence and the tools available to reduce violence in a dynamic group activity. Prevencionopoly is a game that has a final goal of converting players into actors for prevention. This game is available in every OC in the 25 intervention communities. The goal of thegame is to relay prevention of violence to children and adults in a way that is fun to play and easy to understand. 
 
 Learning outcomes from Prevencionoply include:
 1. There are 13 Risk Factors associates with violence.
@@ -923,15 +964,18 @@ Learning outcomes from Prevencionoply include:
 
 3. There are tolos available to reduce the 13 Risk Factors.
 
-4. There are important actors that are responsable for the reduction of violence at the national, municipal and community levels. </tw-passagedata><tw-passagedata pid="46" name="Happy Atoms Summary" tags="" position="2350,150">The physical and digital teaching tool that lets you discover the world of molecules in an intuitive, hands-on way. Create molecules from plastic atom models that connect easily using magnets. Discover the identities of the molecules you build by scanning them with the app. Finally, explore the molecules you discover, assemble collections of them, and complete guided chemistry tasks in the educational app.
+4. There are important actors that are responsable for the reduction of violence at the national, municipal and community levels. </tw-passagedata><tw-passagedata pid="44" name="Happy Atoms Summary" tags="" position="2350,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\The physical and digital teaching tool that lets you discover the world of molecules in an intuitive, hands-on way. Create molecules from plastic atom models that connect easily using magnets. Discover the identities of the molecules you build by scanning them with the app. Finally, explore the molecules you discover, assemble collections of them, and complete guided chemistry tasks in the educational app.
 
 DragonBox Numbers is a new math game that helps develop number sense in kids ages 4-to-8 years old. Rather than focus on reputation and memorization, the game helps kids gain an intuitive understanding of numbers – what they are, how they work, and what you can do with them.
 
 The game brings math to life by turning numbers into colorful and relatable characters, called Nooms. The Nooms can be stacked, sliced, combined, sorted, compared and played with, anyway the player pleases.
 
-The game is based on the same pedagogical principles as the other games in the award-winning DragonBox series including DragonBox Algebra and DragonBox Elements, and works by integrating learning seamlessly into gameplay.</tw-passagedata><tw-passagedata pid="47" name="SuperChem VR Summary" tags="" position="2475,150">SuperChem VR is an immersive virtual reality chemistry lab. Through support by the Institute of Education Sciences (part of the U.S. Department of Education), and the Small Business Innovation Research (SBIR) program SuperChem VR was created.
+The game is based on the same pedagogical principles as the other games in the award-winning DragonBox series including DragonBox Algebra and DragonBox Elements, and works by integrating learning seamlessly into gameplay.</tw-passagedata><tw-passagedata pid="45" name="SuperChem VR Summary" tags="" position="2475,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\SuperChem VR is an immersive virtual reality chemistry lab. Through support by the Institute of Education Sciences (part of the U.S. Department of Education), and the Small Business Innovation Research (SBIR) program SuperChem VR was created.
 
-SuperChem VR can allow students to interact safely in a lab environment without investing in tangible lab equipment. Perform actual measurements correctly in order to complete tasks. Learn real lab procedures, without having to worry about breaking materials and running out of resources.</tw-passagedata><tw-passagedata pid="48" name="PeaceMaker Summary" tags="" position="2600,150">//PeaceMaker was born in the Entertainment Technology Center (ETC) in Carnegie Mellon. As students, we set out to create a video game that is meaningful and non-violent. We chose the Israeli-Palestinian conflict which is to many a representation of the most significant challenges facing leaders today. We thought that in this particular point in time, we have a real chance to add new verbs to the vocabulary of the new generation, the future leaders of the world.
+SuperChem VR can allow students to interact safely in a lab environment without investing in tangible lab equipment. Perform actual measurements correctly in order to complete tasks. Learn real lab procedures, without having to worry about breaking materials and running out of resources.</tw-passagedata><tw-passagedata pid="46" name="PeaceMaker Summary" tags="" position="2600,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\//PeaceMaker was born in the Entertainment Technology Center (ETC) in Carnegie Mellon. As students, we set out to create a video game that is meaningful and non-violent. We chose the Israeli-Palestinian conflict which is to many a representation of the most significant challenges facing leaders today. We thought that in this particular point in time, we have a real chance to add new verbs to the vocabulary of the new generation, the future leaders of the world.
 
 PeaceMaker challenges players to establish peace in the Middle East. Players can take the perspective of the Israeli Prime Minister or the Palestinian President and react to unpredictable real-world events. The players’ ultimate goal is to create virtual peace and be awarded the Nobel Peace Prize. PeaceMaker aims to enhance a deeper understanding of multiple perspectives and challenge the player’s prior knowledge and assumptions.
 
@@ -942,9 +986,11 @@ Main features:
 *  Play the news: the game presents real news footage, images and headlines.
 *  Depending on what players bring to the table, there are three difficulty levels to choose from including calm, tense and violent.
 
-PeaceMaker has been featured in media outlets around the world and is available for PC or Mac in English, Arabic and Hebrew.//</tw-passagedata><tw-passagedata pid="49" name="Lego Mindstorms Summary" tags="" position="2725,150">//Grow your middle school students’ creative problem solving skills and enable them to become the critical thinkers and creators of the future. LEGO® Education solutions support your teaching efforts with effective, structured and curriculum-relevant teaching solutions for science, technology, engineering and math (STEM). 
+PeaceMaker has been featured in media outlets around the world and is available for PC or Mac in English, Arabic and Hebrew.//</tw-passagedata><tw-passagedata pid="47" name="Lego Mindstorms Summary" tags="" position="2725,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\//Grow your middle school students’ creative problem solving skills and enable them to become the critical thinkers and creators of the future. LEGO® Education solutions support your teaching efforts with effective, structured and curriculum-relevant teaching solutions for science, technology, engineering and math (STEM). 
 
-These solutions enable students to understand challenging subjects, encourage them to develop critical thinking skills, grow their ideas, and make their own creations through playful learning experiences.//</tw-passagedata><tw-passagedata pid="50" name="Arguement Wars Summary" tags="" position="2850,150">Ever tried to win a disagreement? In Argument Wars, you will try out your persuasive abilities by arguing a real Supreme Court case. The other lawyer is your competition. Whoever uses the strongest arguments wins! 
+These solutions enable students to understand challenging subjects, encourage them to develop critical thinking skills, grow their ideas, and make their own creations through playful learning experiences.//</tw-passagedata><tw-passagedata pid="48" name="Arguement Wars Summary" tags="" position="2850,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\Ever tried to win a disagreement? In Argument Wars, you will try out your persuasive abilities by arguing a real Supreme Court case. The other lawyer is your competition. Whoever uses the strongest arguments wins! 
 
 Cases include:
 
@@ -956,9 +1002,11 @@ In Re Gault
 Miranda v. Arizona
 New Jersey v. T.L.O.
 Snyder v. Phelps produced in cooperation with the Harlan Institute
-Texas v. Johnson</tw-passagedata><tw-passagedata pid="51" name="LawCraft Summary" tags="" position="2975,150">Want to make some laws? You can in LawCraft, where you play a member of Congress from the state of your choice. You&#x27;ll pick an issue that&#x27;s important to you and your constituents and take it all the way through the law-making process. If you&#x27;re successful, you&#x27;ll have a bill you can print and show off. See if you can make the compromises necessary to get your bill passed and still make a law you&#x27;re proud of!
+Texas v. Johnson</tw-passagedata><tw-passagedata pid="49" name="LawCraft Summary" tags="" position="2975,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\Want to make some laws? You can in LawCraft, where you play a member of Congress from the state of your choice. You&#x27;ll pick an issue that&#x27;s important to you and your constituents and take it all the way through the law-making process. If you&#x27;re successful, you&#x27;ll have a bill you can print and show off. See if you can make the compromises necessary to get your bill passed and still make a law you&#x27;re proud of!
 
-The districts represented in this game were based on the most up to date information available at the time of development. Redistricting may have occured in some states. </tw-passagedata><tw-passagedata pid="52" name="SimCityEDU" tags="" position="3100,25">&lt;div style=&quot;top: -150px;&quot;&gt;
+The districts represented in this game were based on the most up to date information available at the time of development. Redistricting may have occured in some states. </tw-passagedata><tw-passagedata pid="50" name="SimCityEDU" tags="" position="3100,25">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+&lt;div style=&quot;top: -150px;&quot;&gt;
   &lt;div style=&quot;
 	  float: left;
 	  display: block;
@@ -990,14 +1038,15 @@ The districts represented in this game were based on the most up to date informa
 
   &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="53" name="SimCityEDU Summary" tags="" position="3100,150">In SimCity EDU: Pollution Challenge! you are the mayor of a city and it’s up to you to make sure your citizens are happy. How do you keep your citizens happy? Well, people want jobs so they can earn money to buy important things – like food and video games – but, they also want to live in a green, healthy environment.  As mayor, it’s your responsibility to make sure your citizens are employed and content, while also keeping pollution levels down and maintaining a healthy planet.
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="51" name="SimCityEDU Summary" tags="" position="3100,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\In SimCity EDU: Pollution Challenge! you are the mayor of a city and it’s up to you to make sure your citizens are happy. How do you keep your citizens happy? Well, people want jobs so they can earn money to buy important things – like food and video games – but, they also want to live in a green, healthy environment.  As mayor, it’s your responsibility to make sure your citizens are employed and content, while also keeping pollution levels down and maintaining a healthy planet.
 
 Progressing through six missions, players engage in activities that assess their ability to problem solve, understand complex systems and read and interpret data from diagrams. By playing and solving complex problems concerning the environment and city planning, players will learn core English language arts, next-generation science and 21st-century skills. In turn, these activities teach the dynamic systems of cause and effect in our world.
 
-Overall, SimCityEDU gives players the opportunity to navigate real world challenges associated with urban planning and pollution in a highly engaging format. The game prepares students to meet today’s standardized requirements in the core areas mentioned above and equips them with meaningful insight into their own city’s governance over the green world.</tw-passagedata><tw-passagedata pid="54" name="International Development" tags="" position="600,300">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .75s forwards;&quot;&gt;International development demands a deep understanding of complex systems in order to generate and support impactful change. How social, behavioral, economic, and political systems behave both individually and in unison can be difficult to internalize until immersed in the field.&lt;/div&gt;
-&lt;div style=&quot;opacity: 0; animation: fadeIn 2s 1s forwards;&quot;&gt;However, games present an opportunity to elucidate complex systems, and playing them provides the ability to experimentally affect change. As a teaching tool, few mediums are better equipped to rapidly communicate the complex dynamism of a system. And little work has been done by our [[competitors|Competitors]] in this space.&lt;/div&gt; 
-&lt;div style=&quot;opacity: 0; animation: fadeIn 2s 1.25s forwards;&quot;&gt;Harnessing this potential through the gamification of international development concepts could revolutionize the work of this field entirely, presenting an avenue to educate, train, rehabilitate, or simply open a dialogue for change.&lt;/div&gt;
-&lt;div style=&quot;opacity: 0; animation: fadeIn 2s 1.5s forwards;&quot;&gt;[[Return to Home|Start]]&lt;/div&gt;
+Overall, SimCityEDU gives players the opportunity to navigate real world challenges associated with urban planning and pollution in a highly engaging format. The game prepares students to meet today’s standardized requirements in the core areas mentioned above and equips them with meaningful insight into their own city’s governance over the green world.</tw-passagedata><tw-passagedata pid="52" name="International Development" tags="" position="600,300">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;International development demands a deep understanding of complex systems in order to generate and support impactful change. How social, behavioral, economic, and political systems behave both individually and in unison can be difficult to internalize until immersed in the field.&lt;/div&gt;
+&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .5s forwards;&quot;&gt;However, games present an opportunity to elucidate complex systems, and playing them provides the ability to experimentally affect change. As a teaching tool, few mediums are better equipped to rapidly communicate the complex dynamism of a system. And little work has been done by our [[competitors|Competitors]] in this space.&lt;/div&gt; 
+&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .75s forwards;&quot;&gt;Harnessing this potential through the gamification of international development concepts could revolutionize the work of this field entirely, presenting an avenue to educate, train, rehabilitate, or simply open a dialogue for change.&lt;/div&gt;
+&lt;div style=&quot;opacity: 0; animation: fadeIn 2s 1s forwards;&quot;&gt;[[Return to Home|Start]]&lt;/div&gt;
 
 
 &lt;style&gt;
@@ -1007,7 +1056,8 @@ tw-sidebar tw-icon.redo {
 tw-sidebar tw-icon.undo {
 	display: none;
 }
-&lt;/style&gt;</tw-passagedata><tw-passagedata pid="55" name="1000 Ways To Die" tags="" position="1225,275">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="56" name="Paasban: The Guardian" tags="" position="3225,25">&lt;div style=&quot;top: -150px;&quot;&gt;
+&lt;/style&gt;</tw-passagedata><tw-passagedata pid="53" name="1000 Ways To Die" tags="" position="1225,275">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="54" name="Paasban: The Guardian" tags="" position="3225,25">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+&lt;div style=&quot;top: -150px;&quot;&gt;
   &lt;div style=&quot;
 	  float: left;
 	  display: block;
@@ -1039,7 +1089,8 @@ tw-sidebar tw-icon.undo {
 
   &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="57" name="Knack" tags="" position="3350,25">&lt;div style=&quot;top: -150px;&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="55" name="Knack" tags="" position="3350,25">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+&lt;div style=&quot;top: -150px;&quot;&gt;
   &lt;div style=&quot;
 	  float: left;
 	  display: block;
@@ -1071,7 +1122,8 @@ tw-sidebar tw-icon.undo {
 
   &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="58" name="Hero&#x27;s Horizons" tags="" position="3475,25">&lt;div style=&quot;top: -150px;&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="56" name="Hero&#x27;s Horizons" tags="" position="3475,25">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+&lt;div style=&quot;top: -150px;&quot;&gt;
   &lt;div style=&quot;
 	  float: left;
 	  display: block;
@@ -1103,7 +1155,8 @@ tw-sidebar tw-icon.undo {
 
   &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="59" name="Smorball" tags="" position="3600,25">&lt;div style=&quot;top: -150px;&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="57" name="Smorball" tags="" position="3600,25">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+&lt;div style=&quot;top: -150px;&quot;&gt;
   &lt;div style=&quot;
 	  float: left;
 	  display: block;
@@ -1135,13 +1188,17 @@ tw-sidebar tw-icon.undo {
 
   &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="60" name="Smorball Summary" tags="" position="3600,150">Smorball is a challenging browser game that asks players to correctly type the words they see on the screen–punctuation and all. The more words they type correctly, the quicker opposing teams are defeated, and the closer the Eugene Melonballers get to the Dalahäst Trophy.  As an opponent approaches, type the phrase in the corresponding row and press “enter,” commanding your athlete to tackle the opponent. Punctuation matters, so type carefully and quickly – some opponents must be tackled multiple times before they go down!
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="58" name="Smorball Summary" tags="" position="3600,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\Smorball is a challenging browser game that asks players to correctly type the words they see on the screen–punctuation and all. The more words they type correctly, the quicker opposing teams are defeated, and the closer the Eugene Melonballers get to the Dalahäst Trophy.  As an opponent approaches, type the phrase in the corresponding row and press “enter,” commanding your athlete to tackle the opponent. Punctuation matters, so type carefully and quickly – some opponents must be tackled multiple times before they go down!
 
 In addition to being a fun typing game, Smorball tackles a major challenge for digital libraries: full-text searching of digitized material is significantly hampered by poor output from Optical Character Recognition (OCR) software. When first scanned, the pages of digitized books and journals are merely image files, making the pages unsearchable and virtually unusable. Smorball presents players with phrases from scanned pages from cultural heritage institutions. After much verification, the words players type are sent to the libraries that store the corresponding pages, allowing those pages to be searched and data mined and ultimately making historic literature more usable for institutions, scholars, educators, and the public.
 
-Play Smorball and help save scanned books from digital oblivion!</tw-passagedata><tw-passagedata pid="61" name="1000 Ways To Die Summary" tags="" position="1225,400">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="62" name="Paasban: The Guardian Summary" tags="" position="3225,150">‘The Guardian’ or ‘Paasban’ in Urdu is not just any comic book series, but an attempt to fight the spread of terrorism and religious extremism in young minds across the world and especially in Pakistan through the power of storytelling. Created by Creative Frontiers, their comics do not feature spandex clad superheroes, but rather the ordinary people  who live through extraordinary circumstances, make brave choices and reject extremism. These stories are there to change the narrative of hate and inspire vulnerable kids who might otherwise fall victim to extremist ideologies. 
+Play Smorball and help save scanned books from digital oblivion!</tw-passagedata><tw-passagedata pid="59" name="1000 Ways To Die Summary" tags="" position="1225,400">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="60" name="Paasban: The Guardian Summary" tags="" position="3225,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\‘The Guardian’ or ‘Paasban’ in Urdu is not just any comic book series, but an attempt to fight the spread of terrorism and religious extremism in young minds across the world and especially in Pakistan through the power of storytelling. Created by Creative Frontiers, their comics do not feature spandex clad superheroes, but rather the ordinary people  who live through extraordinary circumstances, make brave choices and reject extremism. These stories are there to change the narrative of hate and inspire vulnerable kids who might otherwise fall victim to extremist ideologies. 
 
-Moreover Paasban &#x27;The Guardian&#x27; is a really great story.  Children in Pakistan have told us that they want to be friends with the Paasban characters, and when offered the choice between Paasban and chocolate, they chose more Paasban!</tw-passagedata><tw-passagedata pid="63" name="Knack Summary" tags="" position="3350,150">Knack began as a personality assessment tool that strived to not rely on biased, subjective and idiosyncratic evaluations; and that would leverage technology, science, and data. It has found monumental success in the business realm in rapidly assessing the measure of a person&#x27;s character through a series of questions and a game-like interface. It has since spread its services to realms like education and career guidance, where it is used to predict student admissions or relevant and personalized career paths, with personalized tracks for advice and development.</tw-passagedata><tw-passagedata pid="64" name="Hero&#x27;s Horizons Summary" tags="" position="3475,150">HERO&#x27;S HORIZONS is a fun way to learn about life skills that help you be successful in your school, your community, and your career path.
+Moreover Paasban &#x27;The Guardian&#x27; is a really great story.  Children in Pakistan have told us that they want to be friends with the Paasban characters, and when offered the choice between Paasban and chocolate, they chose more Paasban!</tw-passagedata><tw-passagedata pid="61" name="Knack Summary" tags="" position="3350,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\Knack began as a personality assessment tool that strived to not rely on biased, subjective and idiosyncratic evaluations; and that would leverage technology, science, and data. It has found monumental success in the business realm in rapidly assessing the measure of a person&#x27;s character through a series of questions and a game-like interface. It has since spread its services to realms like education and career guidance, where it is used to predict student admissions or relevant and personalized career paths, with personalized tracks for advice and development.</tw-passagedata><tw-passagedata pid="62" name="Hero&#x27;s Horizons Summary" tags="" position="3475,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\HERO&#x27;S HORIZONS is a fun way to learn about life skills that help you be successful in your school, your community, and your career path.
 
 HERO&#x27;S HORIZONS is free to play and recommended for ages 13+.
 
@@ -1151,7 +1208,8 @@ HERO&#x27;S HORIZONS shares valuable lessons about 18 different life skills. The
 
 HERO&#x27;S HORIZONS features four mission-based levels set in the fictional location of Capitol City. The missions require you to interactively plan and strategize with the citizens of Capitol City. You can play each level in any order you choose – you control your own adventure! 
 
-The more successfully you use your life skills in HERO&#x27;S HORIZONS, the more points and achievements you earn. You can also share your experiences and ideas with other players around the world and find out how to get connected to other free learning activities.</tw-passagedata><tw-passagedata pid="65" name="The Foos" tags="" position="3725,25">&lt;div style=&quot;top: -150px;&quot;&gt;
+The more successfully you use your life skills in HERO&#x27;S HORIZONS, the more points and achievements you earn. You can also share your experiences and ideas with other players around the world and find out how to get connected to other free learning activities.</tw-passagedata><tw-passagedata pid="63" name="The Foos" tags="" position="3725,25">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+&lt;div style=&quot;top: -150px;&quot;&gt;
   &lt;div style=&quot;
 	  float: left;
 	  display: block;
@@ -1183,11 +1241,13 @@ The more successfully you use your life skills in HERO&#x27;S HORIZONS, the more
 
   &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="66" name="The Foos Summary" tags="" position="3725,150">The Foos turns programming into play for kids ages 5 and up. The game introduces computer science and programming concepts through a visual coding language that is fun and accessible to people of all ages. Using a thoughtful combination of challenging puzzles and creative play, the game uses a no-words interface designed for pre-readers and global audiences.
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="64" name="The Foos Summary" tags="" position="3725,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\The Foos turns programming into play for kids ages 5 and up. The game introduces computer science and programming concepts through a visual coding language that is fun and accessible to people of all ages. Using a thoughtful combination of challenging puzzles and creative play, the game uses a no-words interface designed for pre-readers and global audiences.
 
 The Foos makes learning programming seem like playing a video game in which you help adorable characters solve problems. Set in the animated world of Foosville, where the character of the Glitch is wreaking havoc, the game offers scenes where players need to help the inhabitants achieve or solve something. Kids track down a sneaky donut thief, rescue puppies lost in space and serve up gourmet meals while mastering important computer science concepts such as sequencing, pattern recognition, loops, and conditional statements.
 
-The game was originally created for The ‘Hour of Code’ – a global initiative from Code.org and Computer Science Education Week to introduce millions of students to one hour of computer science and computer programming – and since its launch the game has introduced coding to over 2 million kids in 172 countries.</tw-passagedata><tw-passagedata pid="67" name="Choosing My Way" tags="" position="3850,25">&lt;div style=&quot;top: -150px;&quot;&gt;
+The game was originally created for The ‘Hour of Code’ – a global initiative from Code.org and Computer Science Education Week to introduce millions of students to one hour of computer science and computer programming – and since its launch the game has introduced coding to over 2 million kids in 172 countries.</tw-passagedata><tw-passagedata pid="65" name="Choosing My Way" tags="" position="3850,25">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+&lt;div style=&quot;top: -150px;&quot;&gt;
   &lt;div style=&quot;
 	  float: left;
 	  display: block;
@@ -1219,11 +1279,13 @@ The game was originally created for The ‘Hour of Code’ – a global initiati
 
   &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="68" name="Choosing My Way Summary" tags="" position="3850,150">In Choosing My Way, refugees and other newcomer players decide how to respond to opportunities and challenges that arise after resettlement in the U.S.  Players choose goals, collect resources, and respond to situations that change every game. Players may focus on trying to get a high score or on completing the goals that are most important to them.
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="66" name="Choosing My Way Summary" tags="" position="3850,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\In Choosing My Way, refugees and other newcomer players decide how to respond to opportunities and challenges that arise after resettlement in the U.S.  Players choose goals, collect resources, and respond to situations that change every game. Players may focus on trying to get a high score or on completing the goals that are most important to them.
 
 Players do not “win” or “lose.” Instead, they receive a score and are shown the goals they completed. The game encourages experimentation, so that players can reflect on the results of different choices made during the game.
 
-Choosing My Way is targeted towards refugees and new immigrants with some English proficiency who want to learn about life in the U.S. through game play. The game is also designed for orientation providers and educators to use with small groups, facilitating reflection and discussion about available choices and decision making.</tw-passagedata><tw-passagedata pid="69" name="Zoo U" tags="" position="3975,25">&lt;div style=&quot;top: -150px;&quot;&gt;
+Choosing My Way is targeted towards refugees and new immigrants with some English proficiency who want to learn about life in the U.S. through game play. The game is also designed for orientation providers and educators to use with small groups, facilitating reflection and discussion about available choices and decision making.</tw-passagedata><tw-passagedata pid="67" name="Zoo U" tags="" position="3975,25">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+&lt;div style=&quot;top: -150px;&quot;&gt;
   &lt;div style=&quot;
 	  float: left;
 	  display: block;
@@ -1255,7 +1317,9 @@ Choosing My Way is targeted towards refugees and new immigrants with some Englis
 
   &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="70" name="Zoo U Summary" tags="" position="3975,150">Zoo U is the first and only evidence-based game that assesses AND builds social emotional skills. Through adaptive, personalized game play, children (7-12 yo) navigate social situations in a virtual world for future zoo keepers to learn essential social emotional skills for the real world, including communication, cooperation, and empathy.</tw-passagedata><tw-passagedata pid="71" name="Reach For The Sun" tags="" position="4100,25">&lt;div style=&quot;top: -150px;&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="68" name="Zoo U Summary" tags="" position="3975,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\Zoo U is the first and only evidence-based game that assesses AND builds social emotional skills. Through adaptive, personalized game play, children (7-12 yo) navigate social situations in a virtual world for future zoo keepers to learn essential social emotional skills for the real world, including communication, cooperation, and empathy.</tw-passagedata><tw-passagedata pid="69" name="Reach For The Sun" tags="" position="4100,25">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+&lt;div style=&quot;top: -150px;&quot;&gt;
   &lt;div style=&quot;
 	  float: left;
 	  display: block;
@@ -1287,9 +1351,11 @@ Choosing My Way is targeted towards refugees and new immigrants with some Englis
 
   &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="72" name="Reach For The Sun Summary" tags="" position="4100,150">Reach for the Sun is a single-player resource management game in which you control a plant, growing it across a season in the attempt to make as many seeds as possible before winter comes. Your three main resources – water, nutrients, and starch – are used to expand your plant from a little seed into an extensive network of roots, leaves, and flowers. Roots and leaves are used to generate more resources, and flowers are used to produce seeds, which are also used as a currency outside of levels to unlock new types of plants, as well as improvements for the garden such as fertilizer, a watering can, and a praying mantis to fend off pests.
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="70" name="Reach For The Sun Summary" tags="" position="4100,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\Reach for the Sun is a single-player resource management game in which you control a plant, growing it across a season in the attempt to make as many seeds as possible before winter comes. Your three main resources – water, nutrients, and starch – are used to expand your plant from a little seed into an extensive network of roots, leaves, and flowers. Roots and leaves are used to generate more resources, and flowers are used to produce seeds, which are also used as a currency outside of levels to unlock new types of plants, as well as improvements for the garden such as fertilizer, a watering can, and a praying mantis to fend off pests.
 
-In the process of playing Reach for the Sun, you learn all about photosynthesis, plant anatomy, the role of male and female components in pollination, and even, perhaps, something more about the cycle of life and death. These learning processes are completely embedded though, concealed beneath a smooth interface, a beautiful art style, and a really fun set of core-mechanics. Reach for the Sun, while certainly a successful game for the classroom, excels even beyond through the total consideration given to its design.</tw-passagedata><tw-passagedata pid="73" name="Zooniverse" tags="" position="4225,25">&lt;div style=&quot;top: -150px;&quot;&gt;
+In the process of playing Reach for the Sun, you learn all about photosynthesis, plant anatomy, the role of male and female components in pollination, and even, perhaps, something more about the cycle of life and death. These learning processes are completely embedded though, concealed beneath a smooth interface, a beautiful art style, and a really fun set of core-mechanics. Reach for the Sun, while certainly a successful game for the classroom, excels even beyond through the total consideration given to its design.</tw-passagedata><tw-passagedata pid="71" name="Zooniverse" tags="" position="4225,25">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+&lt;div style=&quot;top: -150px;&quot;&gt;
   &lt;div style=&quot;
 	  float: left;
 	  display: block;
@@ -1321,7 +1387,8 @@ In the process of playing Reach for the Sun, you learn all about photosynthesis,
 
   &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="74" name="Rizk" tags="" position="4350,25">&lt;div style=&quot;top: -150px;&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="72" name="Rizk" tags="" position="4350,25">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+&lt;div style=&quot;top: -150px;&quot;&gt;
   &lt;div style=&quot;
 	  float: left;
 	  display: block;
@@ -1353,7 +1420,8 @@ In the process of playing Reach for the Sun, you learn all about photosynthesis,
 
   &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="75" name="Catchment Detox" tags="" position="4475,25">&lt;div style=&quot;top: -150px;&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="73" name="Catchment Detox" tags="" position="4475,25">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+&lt;div style=&quot;top: -150px;&quot;&gt;
   &lt;div style=&quot;
 	  float: left;
 	  display: block;
@@ -1385,7 +1453,8 @@ In the process of playing Reach for the Sun, you learn all about photosynthesis,
 
   &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="76" name="Free Rice" tags="" position="4600,25">&lt;div style=&quot;top: -150px;&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="74" name="Free Rice" tags="" position="4600,25">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+&lt;div style=&quot;top: -150px;&quot;&gt;
   &lt;div style=&quot;
 	  float: left;
 	  display: block;
@@ -1417,7 +1486,8 @@ In the process of playing Reach for the Sun, you learn all about photosynthesis,
 	
   &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="77" name="Darfur Is Dying" tags="" position="4725,25">&lt;div style=&quot;top: -150px;&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="75" name="Darfur Is Dying" tags="" position="4725,25">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+&lt;div style=&quot;top: -150px;&quot;&gt;
   &lt;div style=&quot;
 	  float: left;
 	  display: block;
@@ -1449,7 +1519,8 @@ In the process of playing Reach for the Sun, you learn all about photosynthesis,
 
   &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="78" name="Sidekick Cycle" tags="" position="4850,25">&lt;div style=&quot;top: -150px;&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="76" name="Sidekick Cycle" tags="" position="4850,25">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+&lt;div style=&quot;top: -150px;&quot;&gt;
   &lt;div style=&quot;
 	  float: left;
 	  display: block;
@@ -1481,7 +1552,8 @@ In the process of playing Reach for the Sun, you learn all about photosynthesis,
 
   &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="79" name="Ayiti: The Cost Of Life" tags="" position="4975,25">&lt;div style=&quot;top: -150px;&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="77" name="Ayiti: The Cost Of Life" tags="" position="4975,25">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+&lt;div style=&quot;top: -150px;&quot;&gt;
   &lt;div style=&quot;
 	  float: left;
 	  display: block;
@@ -1513,7 +1585,8 @@ In the process of playing Reach for the Sun, you learn all about photosynthesis,
 
   &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="80" name="3rd World Farmer" tags="" position="5100,25">&lt;div style=&quot;top: -150px;&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="78" name="3rd World Farmer" tags="" position="5100,25">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+&lt;div style=&quot;top: -150px;&quot;&gt;
   &lt;div style=&quot;
 	  float: left;
 	  display: block;
@@ -1545,7 +1618,8 @@ In the process of playing Reach for the Sun, you learn all about photosynthesis,
 
   &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="81" name="Against All Odds" tags="" position="5225,25">&lt;div style=&quot;top: -150px;&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="79" name="Against All Odds" tags="" position="5225,25">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+&lt;div style=&quot;top: -150px;&quot;&gt;
   &lt;div style=&quot;
 	  float: left;
 	  display: block;
@@ -1577,27 +1651,37 @@ In the process of playing Reach for the Sun, you learn all about photosynthesis,
 
   &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="82" name="Zooniverse Summary" tags="" position="4225,150">Zooniverse is a suite of projects focused on harnessing the power of “citizen science” – the systematic collection of data and analysis by a network of volunteers that usually have no scientific background. Zooniverse employs several different types of quests, puzzles, and research activities across different websites that focus on weather data collection, old text analysis, moon crater categorization, and more. While Zooniverse focuses on large-scale crowdsourcing, years of game play through hundreds of thousands of players have also formed a resource for inquiry-based educational tools. The website also acts as a resource for traditional and non-traditional learning environments through various downloads.</tw-passagedata><tw-passagedata pid="83" name="Darfur Is Dying Summary" tags="" position="4725,150">Darfur is Dying is a web-based, viral video game that provides a window into the experience of the 2.5 million refugees in the Darfur region of Sudan. It is designed to raise awareness of the genocide taking place in Darfur and empower college students to help stop the crisis. Students at the University of Southern California, winners of mtvU’s Darfur Digital Activist contest, created the winning prototype. The game was developed in cooperation with humanitarian aid workers with extensive experience in Darfur.
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="80" name="Zooniverse Summary" tags="" position="4225,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\Zooniverse is a suite of projects focused on harnessing the power of “citizen science” – the systematic collection of data and analysis by a network of volunteers that usually have no scientific background. Zooniverse employs several different types of quests, puzzles, and research activities across different websites that focus on weather data collection, old text analysis, moon crater categorization, and more. While Zooniverse focuses on large-scale crowdsourcing, years of game play through hundreds of thousands of players have also formed a resource for inquiry-based educational tools. The website also acts as a resource for traditional and non-traditional learning environments through various downloads.</tw-passagedata><tw-passagedata pid="81" name="Darfur Is Dying Summary" tags="" position="4725,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\Darfur is Dying is a web-based, viral video game that provides a window into the experience of the 2.5 million refugees in the Darfur region of Sudan. It is designed to raise awareness of the genocide taking place in Darfur and empower college students to help stop the crisis. Students at the University of Southern California, winners of mtvU’s Darfur Digital Activist contest, created the winning prototype. The game was developed in cooperation with humanitarian aid workers with extensive experience in Darfur.
 
 The content and the creative are woven together throughout the game, beginning with the first phase where the user selects an avatar to forage for water. Upon success or failure, they learn that their chances of succeeding were predetermined by their gender and age. The navigation system at http://www.darfurisdying.com enables a player to learn about the situation in Darfur, get involved with stopping the crisis, and understand the genesis of the project.
 
-Darfur is Dying helps make activism intuitive in the digital age. Action items are embedded within the game, so that the user may send an automated note to President Bush to support the people of Darfur, or petition Congress to pass legislation that aids Darfur’s refugees, and by doing so increase the overall health of the camp. To further enhance the reach of the game, Darfur is Dying was designed to be spread virally. Players can contact everyone in their email address books and social networks about the game with a click of the mouse.</tw-passagedata><tw-passagedata pid="84" name="Free Rice Summary" tags="" position="4600,150">Free Rice is an online internet game that donates 20 grains of rice to the World Food Programme (WFP) for every word that is correctly defined.
+Darfur is Dying helps make activism intuitive in the digital age. Action items are embedded within the game, so that the user may send an automated note to President Bush to support the people of Darfur, or petition Congress to pass legislation that aids Darfur’s refugees, and by doing so increase the overall health of the camp. To further enhance the reach of the game, Darfur is Dying was designed to be spread virally. Players can contact everyone in their email address books and social networks about the game with a click of the mouse.</tw-passagedata><tw-passagedata pid="82" name="Free Rice Summary" tags="" position="4600,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\Free Rice is an online internet game that donates 20 grains of rice to the World Food Programme (WFP) for every word that is correctly defined.
 
 WFP, the United Nations frontline organization fighting hunger, distributes the rice to the hungry. WFP uses the donations from the site to purchase rice locally, both feeding people in need and stimulating local economies.
 
-Already, the site has raised enough rice to feed over 1.5 million people for a day. The game has been embraced by young and old alike, proving to be an excellent tool for prepping for the SATs or to brush up on vocabulary words. Teachers have been using the game to teach both vocabulary and the value of helping others in need. Free Rice has been a viral phenomenon, and boasts numerous Facebook fan sites, including one page with over 63,000 members.</tw-passagedata><tw-passagedata pid="85" name="Catchment Detox Summary" tags="" position="4475,150">Modeled after data from CSIRO Division of Land and Water and e-water Co-operative Research Centre, Catchment Detox challenges players by putting them in charge of a catchment, a body of land that collects and revitalizes adjacent riverbeds, over a 100 year span. Throughout gameplay, you must manage various aspects of your catchment while focusing on a few key areas.
+Already, the site has raised enough rice to feed over 1.5 million people for a day. The game has been embraced by young and old alike, proving to be an excellent tool for prepping for the SATs or to brush up on vocabulary words. Teachers have been using the game to teach both vocabulary and the value of helping others in need. Free Rice has been a viral phenomenon, and boasts numerous Facebook fan sites, including one page with over 63,000 members.</tw-passagedata><tw-passagedata pid="83" name="Catchment Detox Summary" tags="" position="4475,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\Modeled after data from CSIRO Division of Land and Water and e-water Co-operative Research Centre, Catchment Detox challenges players by putting them in charge of a catchment, a body of land that collects and revitalizes adjacent riverbeds, over a 100 year span. Throughout gameplay, you must manage various aspects of your catchment while focusing on a few key areas.
 
 Catchment Detox allows players to see the impact on not only what they build, but where they build and how their decisions can affect water quality, habitat, and citizen well-being. Players must manage a wide array of parameters to make sure each decision is the right one both economically and environmentally. Each action affects your score and your environment’s water levels. After 100 turns, players have the opportunity to see how their decisions affected their catchment’s health and the wealth of their city. A scoreboard keeps players involved by showing them other players’ top scores and maps of their final catchment’s set up.
 
-</tw-passagedata><tw-passagedata pid="86" name="Rizk Summary" tags="" position="4350,150">Hosted by the Science Museum in London, Rizk is a part of the museum’s “Climate Changing” series of exhibitions, events and installations. This “tower defense” strategy game was created by the UK-based creative studio Playerthree, and is set on a dark and mysterious planet. Players are put in control of an immobile plant that falls from the sky and must scour the landscape for resources. In order to grow, the plant sends out various “collectors” to find different resources so it can flourish. However, you’re not the only plant to keep track of!
+</tw-passagedata><tw-passagedata pid="84" name="Rizk Summary" tags="" position="4350,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\Hosted by the Science Museum in London, Rizk is a part of the museum’s “Climate Changing” series of exhibitions, events and installations. This “tower defense” strategy game was created by the UK-based creative studio Playerthree, and is set on a dark and mysterious planet. Players are put in control of an immobile plant that falls from the sky and must scour the landscape for resources. In order to grow, the plant sends out various “collectors” to find different resources so it can flourish. However, you’re not the only plant to keep track of!
 
-As the levels progress, the player will encounter various threats that pose a risk their plant’s existence. As you send out more collectors, your risk level rises and aggravates the enemy plants causing them to release spores which can damage your plant. However, your mother plant can also send out “defenders” in strategic locations to fend off the spores. Each new stage challenges players to understand the landscape, identify the locations of resources and threats, and determine the risks involved in collecting resources and protecting their plant.</tw-passagedata><tw-passagedata pid="87" name="Ayiti: The Cost Of Life Summary" tags="" position="4975,150">Global Kids has established itself as an innovative leader in using online games to promote global awareness and engaged citizenship. Through the Playing 4 Keeps program, Global Kids trains urban youth to develop games about important world issues. This work has been cited as a best practice within Henry Jenkins’s report for the MacArthur Foundation. Global Kids’ gaming programs are made possible through collaborative relationships with the game design company Gamelab, UNICEF, and TakingITGlobal, among others. Playing 4 Keeps (P4K) uses online games as a form of youth media informed by international issues. Together with Gamelab, an independent game company, Global Kids developed an innovative curriculum for engaging youth in the design, development and dissemination of high quality games that have the potential to educate their peers around the world. Playing 4 Keeps is supported by Microsoft’s U.S. Partners in Learning Mid-Tier initiative. Last year, Global Kids Youth Leaders gained leadership, research, and game design skills while producing a socially conscious online game, Ayiti: The Cost of Life. The youth chose to design a game that focuses on the issue of poverty as an obstacle to education and uses the country of Haiti as a case study. The game and its associated curriculum were released through UNICEF’s Child Alert: Haiti website and TakingITGlobal’s network of over 170,000 educators worldwide. Curriculum material is available for educators. Since it was released in October 2006, hundreds of thousands of people have played Ayiti. The game and the after school component are being evaluated by the Center for Children and Technology.</tw-passagedata><tw-passagedata pid="88" name="Sidekick Cycle Summary" tags="" position="4850,150">The first game from the Global Gaming Initiative (GGI), SideKick Cycle is a side-scrolling bike racing game where players avoid obstacles, perform tricks, and collect coins across 30 stages. Every 387 downloads allows World Bicycle Relief, which will also receive half of the proceeds from in-app purchases, to send a bicycle to an impoverished community.
+As the levels progress, the player will encounter various threats that pose a risk their plant’s existence. As you send out more collectors, your risk level rises and aggravates the enemy plants causing them to release spores which can damage your plant. However, your mother plant can also send out “defenders” in strategic locations to fend off the spores. Each new stage challenges players to understand the landscape, identify the locations of resources and threats, and determine the risks involved in collecting resources and protecting their plant.</tw-passagedata><tw-passagedata pid="85" name="Ayiti: The Cost Of Life Summary" tags="" position="4975,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\Global Kids has established itself as an innovative leader in using online games to promote global awareness and engaged citizenship. Through the Playing 4 Keeps program, Global Kids trains urban youth to develop games about important world issues. This work has been cited as a best practice within Henry Jenkins’s report for the MacArthur Foundation. Global Kids’ gaming programs are made possible through collaborative relationships with the game design company Gamelab, UNICEF, and TakingITGlobal, among others. Playing 4 Keeps (P4K) uses online games as a form of youth media informed by international issues. Together with Gamelab, an independent game company, Global Kids developed an innovative curriculum for engaging youth in the design, development and dissemination of high quality games that have the potential to educate their peers around the world. Playing 4 Keeps is supported by Microsoft’s U.S. Partners in Learning Mid-Tier initiative. Last year, Global Kids Youth Leaders gained leadership, research, and game design skills while producing a socially conscious online game, Ayiti: The Cost of Life. The youth chose to design a game that focuses on the issue of poverty as an obstacle to education and uses the country of Haiti as a case study. The game and its associated curriculum were released through UNICEF’s Child Alert: Haiti website and TakingITGlobal’s network of over 170,000 educators worldwide. Curriculum material is available for educators. Since it was released in October 2006, hundreds of thousands of people have played Ayiti. The game and the after school component are being evaluated by the Center for Children and Technology.</tw-passagedata><tw-passagedata pid="86" name="Sidekick Cycle Summary" tags="" position="4850,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\The first game from the Global Gaming Initiative (GGI), SideKick Cycle is a side-scrolling bike racing game where players avoid obstacles, perform tricks, and collect coins across 30 stages. Every 387 downloads allows World Bicycle Relief, which will also receive half of the proceeds from in-app purchases, to send a bicycle to an impoverished community.
 
 The game’s touch controls are simple—players can tap to jump or hold down on the screen to perform a flip. Style points are awarded for tricks such as multiple flips in a row or long air-time. Botching a landing or hitting an obstacle means players will restart the level from the beginning. To help progress through the game, players can buy SideKicks, or animals that bring various power-ups like the ability to break through rocks or drawing in nearby coins, using coins gathered in-game or through in-app purchases (99 cents to $4.99).
 
 The inspiration for SideKick Cycle came from a trip that GGI Creative Consultant Alejandro Fenn took to Ecuador, where he met a young boy named Javier who could not attend school regularly because of lack of affordable transportation. After the trip, Alejandro and his mother, GGI CEO Elizabeth Sarquis, decided to make a game to bring awareness to the situation and find a way to get children like Javier to school. They spoke about this experience at the 10th Anniversary Games for Change Festival.
 
-An in-app counter keeps track of how many bicycles SideKick Cycle has donated so far.</tw-passagedata><tw-passagedata pid="89" name="3rd World Farmer Summary" tags="" position="5100,150">3rd World Farmer touches on many subjects related to world hunger and poverty, such as corruption, trade barriers, armed conflict, lack of education, sanitation, infrastructure and economic stability. These factors are brought into play through an intuitive and easy-to-play simulation, where the player makes choices primarily about crop types, livestock, tools, and structures for his farm, as well as managing the family members’ health, education, marriages and jobs. The highly playable model, where the player only slowly becomes aware of the perilous situation and his increasingly desperate options, has made the game popular with both casual game players and educators who use the simulation in class.</tw-passagedata><tw-passagedata pid="90" name="Against All Odds Summary" tags="" position="5225,150">Against All Odds is about the global refugee experience from the time people are forced to leave their countries of origin to the beginning of their new life abroad. A series of short challenges illustrates the complexity and danger of the refugee experience.</tw-passagedata><tw-passagedata pid="91" name="Farm Blitz" tags="" position="5350,25">&lt;div style=&quot;top: -150px;&quot;&gt;
+An in-app counter keeps track of how many bicycles SideKick Cycle has donated so far.</tw-passagedata><tw-passagedata pid="87" name="3rd World Farmer Summary" tags="" position="5100,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\3rd World Farmer touches on many subjects related to world hunger and poverty, such as corruption, trade barriers, armed conflict, lack of education, sanitation, infrastructure and economic stability. These factors are brought into play through an intuitive and easy-to-play simulation, where the player makes choices primarily about crop types, livestock, tools, and structures for his farm, as well as managing the family members’ health, education, marriages and jobs. The highly playable model, where the player only slowly becomes aware of the perilous situation and his increasingly desperate options, has made the game popular with both casual game players and educators who use the simulation in class.</tw-passagedata><tw-passagedata pid="88" name="Against All Odds Summary" tags="" position="5225,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\Against All Odds is about the global refugee experience from the time people are forced to leave their countries of origin to the beginning of their new life abroad. A series of short challenges illustrates the complexity and danger of the refugee experience.</tw-passagedata><tw-passagedata pid="89" name="Farm Blitz" tags="" position="5350,25">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+&lt;div style=&quot;top: -150px;&quot;&gt;
   &lt;div style=&quot;
 	  float: left;
 	  display: block;
@@ -1629,23 +1713,18 @@ An in-app counter keeps track of how many bicycles SideKick Cycle has donated so
 
   &lt;/div&gt;
 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="92" name="Farm Blitz Summary" tags="" position="5350,150">Created by and for low-income adults with inspiration from the world’s two most popular games (Bejeweled and Farmville), Farm Blitz combines elements of both titles to simulate the process of creating good savings habits and avoiding the pitfalls of accumulating too much debt.
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="90" name="Farm Blitz Summary" tags="" position="5350,150">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\Created by and for low-income adults with inspiration from the world’s two most popular games (Bejeweled and Farmville), Farm Blitz combines elements of both titles to simulate the process of creating good savings habits and avoiding the pitfalls of accumulating too much debt.
 
 Financial Entertainment is an engaging new media that teaches consumers how to better manage their money.  It is the brainchild of the Doorways to Dreams Fund (D2D), a nonprofit organization that provides innovative financial education to improve the lives of Americans.
 
 Celebrity Calamity, our first financial entertainment product, is a video game that’s fun to play and gives players valuable financial information they can use in daily life.  In this game, players become the Business Manager for three up-and-coming celebrities—Alice Albudget, Buster Buyin, and Missy Moolah—who spend beyond their means. Players must effectively use a bank account, debit card, and credit card to be successful.
 
-D2D is working on three more games, including Groove Nation, the first ever dance-budgeting casual game.  We create these games using a collaborative development process that integrates audience feedback into the game design.  In addition, feedback is incorporated from professional game designers, financial education.</tw-passagedata><tw-passagedata pid="93" name="Evoke" tags="" position="5475,25">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="94" name="Career Quest" tags="" position="5600,25">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="95" name="Evoke Summary" tags="" position="5475,150">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="96" name="Career Quest Summary" tags="" position="5600,150">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="97" name="GlassLabs" tags="" position="1525,1900">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="98" name="Partners" tags="" position="1350,1700">**Potential Partners**
+D2D is working on three more games, including Groove Nation, the first ever dance-budgeting casual game.  We create these games using a collaborative development process that integrates audience feedback into the game design.  In addition, feedback is incorporated from professional game designers, financial education.</tw-passagedata><tw-passagedata pid="91" name="Evoke" tags="" position="5475,25">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="92" name="Career Quest" tags="" position="5600,25">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="93" name="Evoke Summary" tags="" position="5475,150">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="94" name="Career Quest Summary" tags="" position="5600,150">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="95" name="GlassLabs" tags="" position="1500,1550">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="96" name="Partners" tags="" position="1325,1350">**Potential Partners**
 [[American University GameLab|American University GameLab]] 
 [[Filament Games|Filament Games]] 
 [[GlassLabs|GlassLabs]]
-[[Creative Frontiers|Creative Frontiers]]</tw-passagedata><tw-passagedata pid="99" name="Aesthetics/Graphics" tags="" position="825,1775">&lt;style&gt;
-tw-sidebar tw-icon.redo {
-	display: none;
-}
-tw-sidebar tw-icon.undo {
-	display: none;
-}
+[[Creative Frontiers|Creative Frontiers]]</tw-passagedata><tw-passagedata pid="97" name="Aesthetics/Graphics" tags="" position="825,1500">&lt;style&gt;
 
 .transition-in[data-t8n^=dissolve] {
 	-webkit-animation:appear 0ms step-start;
@@ -2079,7 +2158,7 @@ tw-sidebar tw-icon.undo {
     line-height: 20px;
     font-size: 75%;
 	animation: sgdaTitle 2s forwards;
-	animation-delay: .75s&quot;&gt;
+	animation-delay: .5s&quot;&gt;
 	This component of the SGDA Framework refers to the audiovisual
 language (aesthetic characteristics, imagery, style preferences,
 artistic media, and the computer graphic techniques)
@@ -2094,16 +2173,9 @@ the first image on, it plays a fundamental role in the introduction
 of the game’s purpose and its impact on the player  
   &lt;/div&gt; 
 &lt;/div&gt;
-</tw-passagedata><tw-passagedata pid="100" name="SGDA Framework" tags="" position="950,1425">&lt;style&gt;
-tw-sidebar tw-icon.redo {
-	display: none;
-}
-tw-sidebar tw-icon.undo {
-	display: none;
-}
-&lt;/style&gt;
-
-&lt;div style=&quot;
+</tw-passagedata><tw-passagedata pid="98" name="SGDA Framework" tags="" position="950,1150">&lt;/style&gt;
+&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .25s forwards;&quot;&gt;
+\&lt;div style=&quot;
 	opacity: 0;
 	width: 500px; 
 	height: 520px; 
@@ -2528,16 +2600,11 @@ tw-sidebar tw-icon.undo {
 	S(text-style: &quot;outline&quot;)[erious] G(text-style: &quot;outline&quot;)[ame] D(text-style: &quot;outline&quot;)[esign] A(text-style: &quot;outline&quot;)[ssessment]  
   &lt;/div&gt; 
 &lt;/div&gt;
+&lt;/div&gt;
 
  
 
-</tw-passagedata><tw-passagedata pid="101" name="Purpose" tags="" position="950,1825">&lt;style&gt;
-tw-sidebar tw-icon.redo {
-	display: none;
-}
-tw-sidebar tw-icon.undo {
-	display: none;
-}
+</tw-passagedata><tw-passagedata pid="99" name="Purpose" tags="" position="950,1550">&lt;style&gt;
 
 .transition-in[data-t8n^=dissolve] {
 	-webkit-animation:appear 0ms step-start;
@@ -2974,7 +3041,7 @@ tw-sidebar tw-icon.undo {
     line-height: 20px;
     font-size: 75%;
 	animation: sgdaTitle 2s forwards;
-	animation-delay: .75s&quot;&gt;
+	animation-delay: .5s&quot;&gt;
 	Our assessment of a purposeful game design starts with the
 investigation of the games´ purpose to impact its players. Every
 game has certain goals and designers follow their explicit or
@@ -3005,13 +3072,8 @@ also focus on explicit statements regarding the designers’
 intentions and aims. In the following steps, our approach is
 exemplified by comparison of two serious games:  
   &lt;/div&gt; 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="102" name="Fiction/Narrative" tags="" position="825,1625">&lt;style&gt;
-tw-sidebar tw-icon.redo {
-	display: none;
-}
-tw-sidebar tw-icon.undo {
-	display: none;
-}
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="100" name="Fiction/Narrative" tags="" position="825,1350">&lt;style&gt;
+
 .transition-in[data-t8n^=dissolve] {
 	-webkit-animation:appear 0ms step-start;
 	animation:appear 0ms step-start
@@ -3447,7 +3509,7 @@ tw-sidebar tw-icon.undo {
     line-height: 20px;
     font-size: 75%;
 	animation: sgdaTitle 2s forwards;
-	animation-delay: .75s&quot;&gt;
+	animation-delay: .5s&quot;&gt;
 	While the content holds the provided information and the
 mechanics impact the gameplay possibilities, the dimension of
 fiction and narrative introduces a fictional context. Without
@@ -3461,21 +3523,13 @@ similar cases, the game might not offer a linear story, or simulate
 or represent a specific issue, but provide a mechanics-based space
 that enables players to create their own stories.   
   &lt;/div&gt;  
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="103" name="Mechanic" tags="" position="950,1575">&lt;style&gt;
-
-tw-sidebar tw-icon.redo {
-	display: none;
-}
-tw-sidebar tw-icon.undo {
-	display: none;
-}
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="101" name="Mechanic" tags="" position="950,1300">&lt;style&gt;
 
 .transition-in[data-t8n^=dissolve] {
 	-webkit-animation:appear 0ms step-start;
 	animation:appear 0ms step-start
 }
 &lt;/style&gt;
-
 &lt;div style=&quot;
 	opacity: 0;
 	width: 500px; 
@@ -3908,7 +3962,7 @@ tw-sidebar tw-icon.undo {
     line-height: 20px;
     font-size: 75%;
 	animation: sgdaTitle 2s forwards;
-	animation-delay: .75s&quot;&gt;
+	animation-delay: .5s&quot;&gt;
 	The question of what game mechanics are is complex and it is
 discussed extensively within the field of game studies. In
 short, game mechanics are the “methods invoked by agents for
@@ -3925,13 +3979,8 @@ algorithms. Moreover, some games might subvert common game
 design mechanics in order to challenge the players’ expectations
 and to question their modes of thinking.   
   &lt;/div&gt; 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="104" name="Framing" tags="" position="1075,1625">&lt;style&gt;
-tw-sidebar tw-icon.redo {
-	display: none;
-}
-tw-sidebar tw-icon.undo {
-	display: none;
-}
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="102" name="Framing" tags="" position="1075,1350">&lt;style&gt;
+
 .transition-in[data-t8n^=dissolve] {
 	-webkit-animation:appear 0ms step-start;
 	animation:appear 0ms step-start
@@ -4375,7 +4424,7 @@ tw-sidebar tw-icon.undo {
     line-height: 20px;
     font-size: 75%;
 	animation: sgdaTitle 2s forwards;
-	animation-delay: .75s&quot;&gt;
+	animation-delay: .5s&quot;&gt;
 	Besides the five key design elements: purpose, content &amp;
 information, mechanics, fiction &amp; narratives and aesthetics &amp;
 graphics, a further additional aspect is the framing of these
@@ -4395,13 +4444,8 @@ but often lack a balanced and engaging game play experience.
 Hence, well-balanced and attractive learning challenges are one of
 the most fruitful potentials of games to foster learning. 
   &lt;/div&gt; 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="105" name="Content/Information" tags="" position="1075,1775">&lt;style&gt;
-tw-sidebar tw-icon.redo {
-	display: none;
-}
-tw-sidebar tw-icon.undo {
-	display: none;
-}
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="103" name="Content/Information" tags="" position="1075,1500">&lt;style&gt;
+
 .transition-in[data-t8n^=dissolve] {
 	-webkit-animation:appear 0ms step-start;
 	animation:appear 0ms step-start
@@ -4833,7 +4877,7 @@ tw-sidebar tw-icon.undo {
     line-height: 20px;
     font-size: 75%;
 	animation: sgdaTitle 2s forwards;
-	animation-delay: .75s&quot;&gt;
+	animation-delay: .5s&quot;&gt;
 	The element content &amp; information refers to the information, facts
 and data offered and used in the game. For example, on a basic
 level, the content could relate to the stats of the players, the names
@@ -4855,13 +4899,8 @@ bit of (unserious) fun became inefficient. Although the content
 only makes sense framed in the game system – analytically it can
 be separated and examined from the context of the information:  
   &lt;/div&gt; 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="106" name="Game System" tags="" position="950,1700">&lt;style&gt;
-tw-sidebar tw-icon.redo {
-	display: none;
-}
-tw-sidebar tw-icon.undo {
-	display: none;
-}
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="104" name="Game System" tags="" position="950,1425">&lt;style&gt;
+
 .transition-in[data-t8n^=dissolve] {
 	-webkit-animation:appear 0ms step-start;
 	animation:appear 0ms step-start
@@ -5296,7 +5335,7 @@ tw-sidebar tw-icon.undo {
     line-height: 20px;
     font-size: 75%;
 	animation: sgdaTitle 2s forwards;
-	animation-delay: .75s&quot;&gt;
+	animation-delay: .5s&quot;&gt;
 	The pivotal function of the SGDA Framework is not only to
 decompose each of the design elements, but also to examine how
 they holistically relate to each other and to the game’s purpose.
@@ -5317,9 +5356,9 @@ evaluation is uncommon within the serious games research field.
 Thus, it offers a potential for a critical discourse about the strength
 and weaknesses of a serious game:   
   &lt;/div&gt; 
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="107" name="SGDA Intro" tags="" position="950,1275">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .75s forwards;&quot;&gt;When setting out to create a new game, we should never set out empty handed. Being well-informed of similar games that we seek to create, and understanding the essential tenants that comprise an elegant purposeful game design are paramount.&lt;/div&gt;
-&lt;div style=&quot;opacity: 0; animation: fadeIn 2s 1.0s forwards;&quot;&gt;The work by MIT researcher Konstantin Mitgutsch in the realm of purposeful game design will aid greatly to this end. His framework, coined the //Serious Game Design Assessment (SGDA)//, seeks to evaluate the efficacy of purposeful games by consciously addressing the shortcomings of past serious game evaluation methodologies. It identifies six critical design elements--purpose, content/information, mechanics, fiction/narrative, aesthetics/graphics, and framing--which are investigated separately and jointly. We can use this framework as as lens to look back onto any game we seek to create.&lt;/div&gt;
-&lt;div style=&quot;opacity: 0; animation: fadeIn 2s 1.25s forwards;&quot;&gt;[[Explore the SGDA Framework|SGDA Framework]]&lt;/div&gt; </tw-passagedata></tw-storydata>
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="105" name="SGDA Intro" tags="" position="950,1000">&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .5s forwards;&quot;&gt;When setting out to create a new game, we should never set out empty handed. Being well-informed of similar games that we seek to create, and understanding the essential tenants that comprise an elegant purposeful game design are paramount.&lt;/div&gt;
+&lt;div style=&quot;opacity: 0; animation: fadeIn 2s .75s forwards;&quot;&gt;The work by MIT researcher Konstantin Mitgutsch in the realm of purposeful game design will aid greatly to this end. His framework, coined the //Serious Game Design Assessment (SGDA)//, seeks to evaluate the efficacy of purposeful games by consciously addressing the shortcomings of past serious game evaluation methodologies. It identifies six critical design elements--purpose, content/information, mechanics, fiction/narrative, aesthetics/graphics, and framing--which are investigated separately and jointly. We can use this framework as as lens to look back onto any game we seek to create.&lt;/div&gt;
+&lt;div style=&quot;opacity: 0; animation: fadeIn 2s 1s forwards;&quot;&gt;[[Explore the SGDA Framework|SGDA Framework]]&lt;/div&gt; </tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
  * @license almond 0.3.3 Copyright jQuery Foundation and other contributors.
